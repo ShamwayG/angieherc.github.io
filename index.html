@@ -53,7 +53,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 	    <div class="container" >
-            <a class="navbar-brand" href="index.html"> <img src="images/logo-small.png" style="width: 20%"></a>
+            <a class="navbar-brand" href="index.html"> <img src="images/logo-small.png" style="width: 16%"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -81,59 +81,31 @@
     <!-- END nav -->
 
     <section id="home-section" class="hero">
-        <!--    Carousel Indicators    -->
-      <ol class="carousel-indicators">
-        <li data-target="#magicCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#magicCarousel" data-slide-to="1"></li>
-        <li data-target="#magicCarousel" data-slide-to="2"></li>
-        <li data-target="#magicCarousel" data-slide-to="3"></li>
-      </ol>
-      
-<!--    Carousel Slider    -->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img src="//unsplash.it/g/700/450" class="d-block w-100">
-          <div class="carousel-caption">
-            <h3>Slide 01</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat dolore obcaecati perspiciatis neque in, iusto, quia aut molestias minus ipsam modi dolorem odit eos.</p>
-          </div> 
+         <div class="splitview skewed">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h1> Regular Products</h1>
+                    <p>This is what they offer.</p>
+                </div>
+
+                <img src="images/towels.jpg" alt="Original">
+            </div>
         </div>
-        
-        <div class="carousel-item">
-          <img src="https://picsum.photos/700/450" class="d-block w-100">
-          <div class="carousel-caption">
-            <h3>Slide 02</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel in placeat corrupti. Velit quidem eos, accusantium vitae nostrum reiciendis ratione libero? Aperiam, recusandae culpa.</p>
-          </div> 
+
+        <div class="panel top">
+            <div class="content">
+                <div class="description">
+                    <h1>Our Produdcts</h1>
+                    <p style= "color: black">This is why you should buy our products.</p>
+                </div>
+
+                <img src="images/towels.jpg" alt="Duotone">
+            </div>
         </div>
-        
-        <div class="carousel-item">
-          <img src="//unsplash.it/g/700/450" class="d-block w-100">
-          <div class="carousel-caption">
-            <h3>Slide 03</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ut beatae porro ullam quidem officia dignissimos facilis? Blanditiis nesciunt labore pariatur quaerat exercitationem quibusdam modi!</p>
-          </div> 
-        </div>
-        
-        <div class="carousel-item">
-          <img src="https://picsum.photos/700/450" class="d-block w-100">
-          <div class="carousel-caption">
-            <h3>Slide 04</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta accusamus sequi eos consectetur! Animi minima modi ad at similique velit quibusdam veritatis sequi placeat?</p>
-          </div> 
-        </div>
-        
-<!--     Carousel Controls     -->
-        <a href="#magicCarousel" class="carousel-control-prev" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a href="#magicCarousel" class="carousel-control-next" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        
-      </div>
+
+        <div class="handle"></div>
+    </div>
     </section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
@@ -794,6 +766,31 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+ <script type="text/javascript">
+ document.addEventListener('DOMContentLoaded', function() {
+    var parent = document.querySelector('.splitview'),
+        topPanel = parent.querySelector('.top'),
+        handle = parent.querySelector('.handle'),
+        skewHack = 0,
+        delta = 0;
+
+    // If the parent has .skewed class, set the skewHack var.
+    if (parent.className.indexOf('skewed') != -1) {
+        skewHack = 1000;
+    }
+
+    parent.addEventListener('mousemove', function(event) {
+        // Get the delta between the mouse position and center point.
+        delta = (event.clientX - window.innerWidth / 2) * 0.5;
+
+        // Move the handle.
+        handle.style.left = event.clientX + delta + 'px';
+
+        // Adjust the top panel width.
+        topPanel.style.width = event.clientX + skewHack + delta + 'px';
+    });
+});
+</script>
   
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
