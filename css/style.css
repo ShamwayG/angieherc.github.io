@@ -10709,6 +10709,18 @@ body {
         width: 100vw;
         min-height: 35vw;
         color: #FFF;
+        @media (min-width: 576px) {
+        .content {
+        font-size: 55%; } }
+        @media (min-width: 768px) {
+        .content {
+        font-size: 55%; } }
+        @media (min-width: 992px) {
+        .content {
+        font-size: 55%; } }
+        @media (min-width: 1200px) {
+        .content {
+        font-size: 55%; } }
     }
 
     .panel .description {
@@ -10787,7 +10799,7 @@ body {
 /* Responsive. */
 @media (max-width: 900px) {
     body {
-        font-size: 75%;
+        font-size: 35%;
     }
 }
 .heading1 {
