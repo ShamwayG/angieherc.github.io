@@ -10695,6 +10695,7 @@ body {
     height: 50%;
     min-height: 35vw;
     overflow: hidden;
+    object-fit: cover; 
 }
 
 .panel {
@@ -10702,6 +10703,7 @@ body {
     width: 100vw;
     min-height: 35vw;
     overflow: hidden;
+    object-fit: cover; 
 }
 
     .panel .content {
@@ -10709,18 +10711,7 @@ body {
         width: 100vw;
         min-height: 35vw;
         color: #FFF;
-        @media (min-width: 576px) {
-        .content {
-        font-size: 55%; } }
-        @media (min-width: 768px) {
-        .content {
-        font-size: 55%; } }
-        @media (min-width: 992px) {
-        .content {
-        font-size: 55%; } }
-        @media (min-width: 1200px) {
-        .content {
-        font-size: 55%; } }
+        object-fit: cover; 
     }
 
     .panel .description {
@@ -10729,6 +10720,7 @@ body {
         top: 50%;
         transform: translateY(-50%);
         text-align: center;
+        object-fit: cover; 
     }
 
     .panel img {
@@ -10738,22 +10730,26 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        object-fit: cover;
     }
 
 
 .bottom {
     background-color: #dadada;
     z-index: 1;
+    object-fit: cover;
 }
 
     .bottom .description {
         right: 5%;
+        object-fit: cover;
     }
 
 .top {
     background-color: #9d9d9c;
     z-index: 2;
     width: 50vw;
+    object-fit: cover;
 
     /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
@@ -10773,6 +10769,7 @@ body {
     top: 0;
     left: 50%;
     z-index: 3;
+    object-fit: cover;
 }
 
 /* Skewed. */
@@ -10783,24 +10780,23 @@ body {
     -webkit-transform-origin: top;
     -moz-transform-origin: top;
     transform-origin: top;
+    object-fit: cover;
 }
 
 .skewed .top {
     transform: skew(-30deg);
     margin-left: -1000px;
     width: calc(50vw + 1000px);
+    object-fit: cover;
 }
 
 .skewed .top .content {
     transform: skew(30deg);
     margin-left: 1000px;
+    object-fit: cover;
+    
 }
 
-/* Responsive. */
-@media (max-width: 900px) {
-    body {
-        font-size: 35%;
-    }
-}
+
 .heading1 {
         color: #0b7a75; }
