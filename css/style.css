@@ -9542,7 +9542,9 @@ textarea.form-control {
 .ftco-animate {
   opacity: 0;
   visibility: hidden; }
-
+.ftco-animate1 {
+  opacity: 0;
+  visibility: hidden; }
 .bg-primary {
   background: #E94E1B !important; }
 
@@ -10801,3 +10803,66 @@ body {
 
 .heading1 {
         color: #0b7a75; }
+/* video section */
+.full-screen-video-container {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.full-screen-video-container video {
+    z-index: -1;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.full-screen-video-content {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    font-size: 70px;
+}
+article {
+/*  just a fancy border  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 20px solid rgba(255, 255, 255, 0.5);
+  margin: 1px;
+}
+
+
+h1 span {
+  font-family: sans-serif;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+h1 span a {
+  color: #fff;
+}
+
+.collapse-content .fa.fa-heart:hover {
+  color: #f44336 !important;
+}
+.collapse-content .fa.fa-share-alt:hover {
+  color: #0d47a1 !important;
+}
+
