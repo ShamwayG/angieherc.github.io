@@ -10813,7 +10813,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 3%;
+    margin-top:-140px;
+    margin-bottom:-40px
 }
 
 .full-screen-video-container video {
