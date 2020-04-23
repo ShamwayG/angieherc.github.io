@@ -10834,30 +10834,6 @@ body {
     padding: 20px;
     font-size: 70px;
 }
-article {
-/*  just a fancy border  */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 20px solid rgba(255, 255, 255, 0.5);
-  margin: 1px;
-}
-
-
-h1 span {
-  font-family: sans-serif;
-  letter-spacing: 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 20px;
-}
-
-h1 span a {
-  color: #fff;
-}
 
 .collapse-content .fa.fa-heart:hover {
   color: #f44336 !important;
