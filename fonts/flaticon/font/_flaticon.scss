@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 26/04/2019 08:25
+    Creation date: 19/05/2020 14:13
     */
 
     @font-face {
@@ -37,12 +37,10 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-bag:before { content: "\f100"; }
-.flaticon-customer-service:before { content: "\f101"; }
-.flaticon-payment-security:before { content: "\f102"; }
-.flaticon-heart-box:before { content: "\f103"; }
+    .flaticon-contract:before { content: "\f100"; }
+.flaticon-credit-card:before { content: "\f101"; }
+.flaticon-package:before { content: "\f102"; }
     
-    $font-Flaticon-bag: "\f100";
-    $font-Flaticon-customer-service: "\f101";
-    $font-Flaticon-payment-security: "\f102";
-    $font-Flaticon-heart-box: "\f103";
+    $font-Flaticon-contract: "\f100";
+    $font-Flaticon-credit-card: "\f101";
+    $font-Flaticon-package: "\f102";
