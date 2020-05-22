@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="images/icon.png">
+  <link rel="icon" href="images/icon.png">
     <meta charset="utf-8"><title>Carbotec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -21,10 +24,12 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+   
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="jquery.min.js"></script>
+    <script src="waltzerjs.js"></script>
   </head>
   <body class="goto-here">
 		<div class="py-1 bg-black">
@@ -32,34 +37,30 @@
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
 	    		<div class="col-lg-12 d-block">
 		    		<div class="row d-flex">
-		    			<div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+ 1235 2355 98</span>
-					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-envelope"></span></div>
+						    <span class="text" ><a href="mailto:info@carbotec24.com" style="color: white">E-MAIL</a></span>
 					    </div>
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-						    <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+					    <div class="col-md pr-4 d-flex topper align-items-center text-lg-right">
+						    <span class="text">Du erhältst jetzt kostenfreien Versand auf alle Artikel!</span>
 					    </div>
 				    </div>
 			    </div>
 		    </div>
 		  </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	        <a class="navbar-brand" href="index.html"> <img src="images/logo-withe.png" style="width: 20%"></a>
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container" >
+            <a class="navbar-brand" href="index.html"> <img src="images/logo-small.png" style="width: 16%"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+	          <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="shop.html">Shop</a>
                 <a class="dropdown-item" href="product-single.html">Single Product</a>
@@ -67,8 +68,9 @@
                 <a class="dropdown-item" href="checkout.html">Checkout</a>
               </div>
             </li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">B2B</a></li>
+              <li class="nav-item"><a href="blog.html" class="nav-link">BlOG</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">KONTAKT</a></li>
 	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 	        </ul>
@@ -95,7 +97,7 @@
     				<div class="row">
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product d-flex flex-column">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.png" alt="Colorlib Template">
 		    						<div class="overlay"></div>
 		    					</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -113,7 +115,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		    						<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -126,7 +128,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product d-flex flex-column">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.png" alt="Colorlib Template">
 		    						<span class="status">50% Off</span>
 		    						<div class="overlay"></div>
 		    					</a>
@@ -145,7 +147,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
 			    					</div>
@@ -158,7 +160,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.png" alt="Colorlib Template">
 			    					<div class="overlay"></div>
 			    				</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -176,7 +178,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -189,7 +191,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.png" alt="Colorlib Template">
 		    						<div class="overlay"></div>
 		    					</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -207,7 +209,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -221,7 +223,7 @@
 
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product d-flex flex-column">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.png" alt="Colorlib Template">
 		    						<div class="overlay"></div>
 		    					</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -239,7 +241,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		    						<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -252,7 +254,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product d-flex flex-column">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-6.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-6.png" alt="Colorlib Template">
 		    						<span class="status">50% Off</span>
 		    						<div class="overlay"></div>
 		    					</a>
@@ -271,7 +273,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
 			    					</div>
@@ -284,7 +286,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-7.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-7.png" alt="Colorlib Template">
 			    					<div class="overlay"></div>
 			    				</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -302,7 +304,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -315,7 +317,7 @@
 		    			</div>
 		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
 		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-8.png" alt="Image name">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-8.png" alt="Colorlib Template">
 		    						<div class="overlay"></div>
 		    					</a>
 		    					<div class="text py-3 pb-4 px-3">
@@ -333,7 +335,7 @@
 			    							</p>
 			    						</div>
 			    					</div>
-		    						<h3><a href="#">Item Name 2019 iD</a></h3>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		  							<div class="pricing">
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
@@ -371,16 +373,20 @@
                      <div class="panel panel-default">
                          <div class="panel-heading" role="tab" id="headingOne">
                              <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Category One
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Men's Shoes
                                  </a>
                              </h4>
                          </div>
                          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                              <div class="panel-body">
                                  <ul>
-                                 	<li><a href="#">sub one</a></li>
-                                 	<li><a href="#">sub two</a></li>
-                                 	<li><a href="#">sub three</a></li>
+                                 	<li><a href="#">Sport</a></li>
+                                 	<li><a href="#">Casual</a></li>
+                                 	<li><a href="#">Running</a></li>
+                                 	<li><a href="#">Jordan</a></li>
+                                 	<li><a href="#">Soccer</a></li>
+                                 	<li><a href="#">Football</a></li>
+                                 	<li><a href="#">Lifestyle</a></li>
                                  </ul>
                              </div>
                          </div>
@@ -388,22 +394,24 @@
                      <div class="panel panel-default">
                          <div class="panel-heading" role="tab" id="headingTwo">
                              <h4 class="panel-title">
-                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Women's Shoes
                                  </a>
                              </h4>
                          </div>
                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                              <div class="panel-body">
                                 <ul>
-                                 	<li><a href="#">sub four</a></li>
-                                 	<li><a href="#">sub five</a></li>
-                                 	<li><a href="#">sub six</a></li>
+                                 	<li><a href="#">Sport</a></li>
+                                 	<li><a href="#">Casual</a></li>
+                                 	<li><a href="#">Running</a></li>
+                                 	<li><a href="#">Jordan</a></li>
+                                 	<li><a href="#">Soccer</a></li>
+                                 	<li><a href="#">Football</a></li>
                                  	<li><a href="#">Lifestyle</a></li>
                                 </ul>
                              </div>
                          </div>
                      </div>
-                    <!--
                      <div class="panel panel-default">
                          <div class="panel-heading" role="tab" id="headingThree">
                              <h4 class="panel-title">
@@ -440,7 +448,6 @@
                              </div>
                          </div>
                      </div>
-                    -->
                   </div>
                </div>
 							</div>
@@ -544,7 +551,7 @@
     	</div>
     </section>
 
- <footer class="ftco-footer ftco-section">
+     <footer class="ftco-footer ftco-section">
       <div class="container">
       	<div class="row">
       		<div class="mouse">
@@ -554,10 +561,11 @@
 					</div>
       	</div>
         <div class="row mb-5">
-          <div class="col-md">
+          <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-             <h2 class="ftco-heading-2"><img src="images/logo.png" style="width: 50%; align-items: center;"></h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+              <h2 class="ftco-heading-2"><img src="images/logo.png" style="width: 50%; align-items: center;"></h2>
+              <p>Was auch immer du in der Küche oder an deinem Auto polieren oder saubermachen willst - Carbotec liefert dir die passenden Mikrofaser Tücher. Für dich selbst oder als Geschenk, außerdem hochwertige Autoprodukte und beste Reinigungsmittel. <br/>In unserem BLOG findest du spannende Beiträge - auch zu den Themen Waschen &amp; Reinigen oder Polieren.</p>
+             <p>DU FINDEST UNS AUCH BEI</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -565,42 +573,38 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Menu</h2>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-5 ml-md-5">
+              <h2 class="ftco-heading-2">Carbotec</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Shop</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Journal</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="#" class="py-2 d-block">SHOP</a></li>
+                <li><a href="#" class="py-2 d-block">VERSAND</a></li>
+                <li><a href="#" class="py-2 d-block">B2B</a></li>
+                <li><a href="#" class="py-2 d-block">BLOG</a></li>
+                <li><a href="#" class="py-2 d-block">PARTNER</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Help</h2>
+          <div class="col-md-3">
+             <div class="ftco-footer-widget mb-5 ml-md-5">
+              <h2 class="ftco-heading-2">SERVICE</h2>
               <div class="d-flex">
-	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
-	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
-	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
-	              </ul>
-	              <ul class="list-unstyled">
-	                <li><a href="#" class="py-2 d-block">FAQs</a></li>
-	                <li><a href="#" class="py-2 d-block">Contact</a></li>
+	              <ul class="list-unstyled mr-l-5 pr-l-3">
+	                <li><a href="#" class="py-2 d-block">KONTAKT</a></li>
+	                <li><a href="#" class="py-2 d-block">FAQ</a></li>
+	                <li><a href="#" class="py-2 d-block">AGB</a></li>
+	                <li><a href="#" class="py-2 d-block">DATENSCHUTZ</a></li>
+                    <li><a href="#" class="py-2 d-block">IMPRESSUM</a></li>
 	              </ul>
 	            </div>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<h2 class="ftco-heading-2">kONTAKT</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Somewhere on earth, State, Country</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1 234 567 890</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-envelope"></span><span> <a href="mailto:info@carbotec24.com" style="color: white">info@carbotec24.com</a></span></li>
 	              </ul>
 	            </div>
             </div>
