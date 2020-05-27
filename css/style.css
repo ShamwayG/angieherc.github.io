@@ -10879,6 +10879,9 @@ video#video_container {
 .color-hidden {
   display: none;
 }
+.color-change {
+  color: #dadada;
+}
 
 .terms-cons { 
     font-size: 14px;
