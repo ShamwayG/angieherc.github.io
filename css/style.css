@@ -10905,18 +10905,18 @@ video#video_container {
     text-align: center;
 }
 .btn-primar {
-  color: none;
-  background-color: black;
-  border-color: black; }
+  color: #e94e1b;
+  background-color: #e94e1b;
+  border-color: #e94e1b; }
   .btn-primar:hover {
-    color: ;
+    color: #e94e1b;
     background-color: #e94e1b;
     border-color: #e94e1b; }
 
 .under-btn {
-    text-decoration-line: underline;
-    text-decoration-color: #e94e1b;
-    border-color: #e94e1b;
+    text-decoration: underline;
+    text-decoration-color: black;
+    border-color: black;
     } 
 
 .cc_container a,
@@ -10939,3 +10939,59 @@ video#video_container {
 	color: #fff;
 	background: #51d3ff;
 }
+.wrapp {
+	width: 250px;
+	height: 50px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+}
+.starss {
+	width: fit-content;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.starr {
+	color: #91a6ff !important;
+}
+.ratee {
+	height: 50px;
+	margin-left: -5px;
+	padding: 5px;
+	font-size: 25px;
+	position: relative;
+	cursor: pointer;
+}
+.ratee input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	pointer-events: none;
+}
+.starr-over::after {
+	font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+	font-size: 16px;
+	content: "\f005";
+	display: inline-block;
+	color: #d3dcff;
+	z-index: 1;
+	position: absolute;
+	top: 17px;
+	left: 10px;
+}
+
+.ratee:hover {
+	opacity: 1;
+}
+
+/* Not sure if I like this or not. */
+/* Makes the emoji stay displayed */
+/* input[type="radio"]:checked + .face {
+	opacity: 1 !important;
+} */
