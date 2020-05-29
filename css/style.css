@@ -10917,4 +10917,25 @@ video#video_container {
     text-decoration-line: underline;
     text-decoration-color: #e94e1b;
     border-color: #e94e1b;
-    }  
+    } 
+
+.cc_container a,
+.cc_container a:visited {
+	color: #00afea;
+}
+.cc_container a:hover,
+.cc_container a:focus {
+	color: #e94e1b;
+} 
+
+/* Styles für "Verstanden"-Button */
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited {
+	color: #fff;
+	background-color: #00afea;
+}
+.cc_container .cc_btn:hover,
+.cc_container .cc_btn:focus {
+	color: #fff;
+	background: #51d3ff;
+}
