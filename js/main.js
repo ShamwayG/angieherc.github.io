@@ -344,3 +344,20 @@ setInterval(function() { makeTimer(); }, 1000);
 
 })(jQuery);
 
+window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#237afc"
+            },
+            "button": {
+              "background": "#fff",
+              "text": "#237afc"
+            }
+          },
+          "type": "opt-out",
+          "content": {
+            "message": "Website cookies alert by Cookie Consent",
+            "href": "https://cookieconsent.insites.com"
+          }
+        })});

@@ -59,19 +59,10 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
-	          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="shop.html">ALLE PRODUKTE</a>
-                <a class="dropdown-item" href="product-single.html">EINZEL PRODUKTE</a>
-                <a class="dropdown-item" href="cart.html">WARENKORB</a>
-                <a class="dropdown-item" href="checkout.html">CHECKOUT</a>
-              </div>
-            </li>
+	          <li class="nav-item active"><a href="index.html" class="nav-link">SHOP</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">B2B</a></li>
               <li class="nav-item"><a href="blog.html" class="nav-link">BlOG</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">KONTAKT</a></li>
-	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 	        </ul>
 	      </div>
@@ -117,6 +108,39 @@
 			    					</div>
 		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
 		    						<div class="pricing">
+			    						<p class="price"><span>$120.00</span></p>
+			    					</div>
+			    					<p class="bottom-area d-flex px-3">
+		    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>More Info <i class="ion-ios-add ml-1"></i></span></a>
+		    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+		    				<div class="product d-flex flex-column">
+		    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.png" alt="Colorlib Template">
+		    						<span class="status">50% Off</span>
+		    						<div class="overlay"></div>
+		    					</a>
+		    					<div class="text py-3 pb-4 px-3">
+		    						<div class="d-flex">
+		    							<div class="cat">
+				    						<span>Lifestyle</span>
+				    					</div>
+				    					<div class="rating">
+			    							<p class="text-right mb-0">
+			    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+			    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+			    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+			    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+			    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+			    							</p>
+			    						</div>
+			    					</div>
+		    						<h3><a href="#">Nike Free RN 2019 iD</a></h3>
+		  							<div class="pricing">
+			    						<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
 			    						<p class="price"><span>$12000.00</span></p>
 			    					</div>
 			    					<p class="bottom-area d-flex px-3">
@@ -288,8 +312,145 @@
 			    						<p class="price"><span>$120.00</span></p>
 			    					</div>
 			    					<p class="bottom-area d-flex px-3">
-		    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-		    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+		    							<a href="product-single.html" class="add-to-cart text-center py-2 mr-1"><span>MORE INFO <i class="ion-ios-add ml-1"></i></span></a>
+		    							<a href="#" class="buy-now text-center py-2"><span><i class="ion-ios-cart ml-1"></i></span>
+                                        <script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'carbotec.myshopify.com',
+      storefrontAccessToken: '6612e503e6a6c058a0ba6c69dd584a04',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '5245308403875',
+        node: document.getElementById('product-component-1590595724947'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#d24618"
+        },
+        "background-color": "#e94e1b",
+        ":focus": {
+          "background-color": "#d24618"
+        },
+        "border-radius": "26px",
+        "padding-left": "46px",
+        "padding-right": "46px"
+      }
+    },
+    "text": {
+      "button": "IN DEN WARENKORB"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#d24618"
+        },
+        "background-color": "#e94e1b",
+        ":focus": {
+          "background-color": "#d24618"
+        },
+        "border-radius": "26px",
+        "padding-left": "46px",
+        "padding-right": "46px"
+      }
+    },
+    "text": {
+      "button": "IN DEN WARENKORB"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#d24618"
+        },
+        "background-color": "#e94e1b",
+        ":focus": {
+          "background-color": "#d24618"
+        },
+        "border-radius": "26px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "ZUR KASSE"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#e94e1b",
+        ":hover": {
+          "background-color": "#d24618"
+        },
+        ":focus": {
+          "background-color": "#d24618"
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                                        </a>
 		    						</p>
 		    					</div>
 		    				</div>
