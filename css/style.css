@@ -10701,7 +10701,7 @@ body {
     object-fit: cover; 
 }
 
-.panel {
+.panele {
     position: absolute;
     width: 100vw;
     min-height: 35vw;
@@ -10709,7 +10709,7 @@ body {
     object-fit: cover; 
 }
 
-    .panel .content {
+    .panele .content {
         position: absolute;
         width: 100vw;
         min-height: 35vw;
@@ -10717,7 +10717,7 @@ body {
         object-fit: cover; 
     }
 
-    .panel .description {
+    .panele .description {
         width: 25%;
         position: absolute;
         top: 50%;
@@ -10726,7 +10726,7 @@ body {
         object-fit: cover; 
     }
 
-    .panel img {
+    .panele img {
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
         width: 35%;
         position: absolute;
@@ -10837,13 +10837,6 @@ body {
     font-size: 70px;
 }
 
-.collapse-content .fa.fa-heart:hover {
-  color: #f44336 !important;
-}
-.collapse-content .fa.fa-share-alt:hover {
-  color: #0d47a1 !important;
-}
-
 #wrapper {
   position: relative;
   top:0; left:0; right:0; bottom:0;
@@ -10921,77 +10914,77 @@ video#video_container {
 
 .cc_container a,
 .cc_container a:visited {
-	color: #00afea;
+  color: #00afea;
 }
 .cc_container a:hover,
 .cc_container a:focus {
-	color: #e94e1b;
+  color: #e94e1b;
 } 
 
 /* Styles für "Verstanden"-Button */
 .cc_container .cc_btn,
 .cc_container .cc_btn:visited {
-	color: #fff;
-	background-color: #00afea;
+  color: #fff;
+  background-color: #00afea;
 }
 .cc_container .cc_btn:hover,
 .cc_container .cc_btn:focus {
-	color: #fff;
-	background: #51d3ff;
+  color: #fff;
+  background: #51d3ff;
 }
 .wrapp {
-	width: 250px;
-	height: 50px;
-	background: #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
 }
 .starss {
-	width: fit-content;
-	margin: 0 auto;
-	cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .starr {
-	color: #91a6ff !important;
+  color: #91a6ff !important;
 }
 .ratee {
-	height: 50px;
-	margin-left: -5px;
-	padding: 5px;
-	font-size: 25px;
-	position: relative;
-	cursor: pointer;
+  height: 50px;
+  margin-left: -5px;
+  padding: 5px;
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
 }
 .ratee input[type="radio"] {
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,0%);
-	pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  pointer-events: none;
 }
 .starr-over::after {
-	font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-	font-size: 16px;
-	content: "\f005";
-	display: inline-block;
-	color: #d3dcff;
-	z-index: 1;
-	position: absolute;
-	top: 17px;
-	left: 10px;
+  font-size: 16px;
+  content: "\f005";
+  display: inline-block;
+  color: #d3dcff;
+  z-index: 1;
+  position: absolute;
+  top: 17px;
+  left: 10px;
 }
 
 .ratee:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Not sure if I like this or not. */
 /* Makes the emoji stay displayed */
 /* input[type="radio"]:checked + .face {
-	opacity: 1 !important;
+  opacity: 1 !important;
 } */
